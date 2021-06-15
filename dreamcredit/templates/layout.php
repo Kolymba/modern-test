@@ -11,31 +11,29 @@
         <link rel="stylesheet" type="text/css" media="(max-width: 697px)" href="css/style320.css" />
         <link rel="stylesheet" type="text/css" href="css/form.css" />  
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>       
+        <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>            
         <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->         
-        </head>        
-            <body>                       
+        </head>
+            <body>            
             <header class="header">
                 <div class="wrapper">
                     <div class="header_wrapper">
-                        <div class="header-logo-container">
-                            <div class="header-logo"></div>
-                            <div class="header-border"></div>
-                            <div class="slogan">Find the best credit card offers online</div>                        
-                        </div>
-                        <div class="header-list">
-                            <div class="header-item">
-                                <a class ="header-link" href="#">PREPAID & CREDIT OFFERS<img src="img/keyboard_arrow_down.svg" alt="keyboard_arrow_down" class="menu-svn-arrow"></a>
-                            </div>
-                            <div class="header-item">
-                                <a  class ="header-link" href="#">RESOURCES<img src="img/keyboard_arrow_down.svg" alt="keyboard_arrow_down" class="menu-svn-arrow"></a>
-                            </div>                                
-                            <div class="header-item2">
-                                <input type="text" class="search-input"><div class="menu-svn-menu"><span class="hamburger"></span></div><div class="menu-svn-search"></div>
-                            </div>
-                        </div> 
+                        <div class="header-logo">                            
+                        </div>                        
+                        
+                            <div class="header-list">
+                                <div class="header-item">
+                                    <a class ="header-link" href="#">PREPAID & CREDIT OFFERS</a><img src="img/keyboard_arrow_down.svg" alt="keyboard_arrow_down" class="menu-svn-arrow">
+                                </div>
+                                <div class="header-item">
+                                    <a  class ="header-link" href="#">RESOURCES<img src="img/keyboard_arrow_down.svg" alt="keyboard_arrow_down" class="menu-svn-arrow"></a>
+                                </div>                                
+                                <div class="header-item2">
+                                    <input type="text" class="search-input"><img src="img/menu.png" alt="search" class="menu-svn-menu"><img src="img/search.svg" alt="search" class="menu-svn-search">
+                                </div>
+                            </div> 
                     </div> 
                 </div>    
             </header>
@@ -44,21 +42,16 @@
                     <div class="breadcrumbs">
                         <ul >
                             <li><a href="#">Best credit offers</a></li>
-                            <li>&#8250;</li>
+                            <li>></li>
                             <li><a  href="#">Contact Us</a></li>
-                            <li>&#8250;</li>
+                            <li>></li>
                         </ul>
                     </div>
                     <div class="contact_us_wrapper">
                             <div class="contact_us_h1">
                                 <h1>CONTACT US</h1>
                             </div>
-                            <div class="contact_us_img">
-                                <div class="preview">
-                                    <div class="arrow_box">            
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="contact_us_img"><img src="img/line.svg"></div>
                             <div class="contact_us_text">We welcome your comments, questions, or any request you may have! If you would like to contact our staff, please complete the form below. </br>
                             </br>
                             We will respond to your inquiries ASAP!
@@ -106,11 +99,8 @@
                             <div class="banks-group">
                                 <div class="banks-image">
                                     <img src="img/group1.png" alt="">
+                                    <img src="img/line2.svg" alt="">
                                 </div>
-                                <div class="preview2">
-                                    <div class="arrow_box_b">            
-                                    </div>
-                                </div>    
                                 <div class="banks-text">                                
                                         <div>BOFI:</div>
                                         <div>Customer Service:</br>
@@ -119,11 +109,8 @@
                             </div>
                             <div class="banks-group">
                                 <div class="banks-image">
-                                    <img src="img/group2.png" alt="">                                    
-                                </div>
-                                <div class="preview2">
-                                    <div class="arrow_box_b">            
-                                    </div>
+                                    <img src="img/group2.png" alt="">
+                                    <img src="img/line2.svg"  alt="">
                                 </div>
                                 <div class="banks-text">
                                     <div>CAPITAL ONE®:</div>
@@ -133,11 +120,8 @@
                             </div>
                             <div class="banks-group">
                                 <div class="banks-image">
-                                    <img src="img/group3.png" alt="">                                    
-                                </div>
-                                <div class="preview2">
-                                    <div class="arrow_box_b">            
-                                    </div>
+                                    <img src="img/group3.png" alt="">
+                                    <img src="img/line2.svg"  alt="">
                                 </div>
                                 <div class="banks-text">
                                     <div>CAPITAL BANK:</div>
@@ -147,11 +131,8 @@
                             </div>
                             <div class="banks-group">
                                 <div class="banks-image">
-                                    <img src="img/group4.png" alt="">                                    
-                                </div>
-                                <div class="preview2">
-                                    <div class="arrow_box_b">            
-                                    </div>
+                                    <img src="img/group4.png" alt="">
+                                    <img src="img/line2.svg"  alt="">
                                 </div>
                                 <div class="banks-text">
                                     <div>CREDIT ONE BANK®:</div>
@@ -161,11 +142,8 @@
                             </div>
                             <div class="banks-group">
                                 <div class="banks-image">
-                                    <img src="img/group5.png" alt="">                                    
-                                </div>
-                                <div class="preview2">
-                                    <div class="arrow_box_b">            
-                                    </div>
+                                    <img src="img/group5.png" alt="">
+                                    <img src="img/line2.svg"  alt="">
                                 </div>
                                 <div class="banks-text">
                                     <div>METABANK:</div>
@@ -175,11 +153,8 @@
                             </div>
                             <div class="banks-group">
                                 <div class="banks-image">
-                                    <img src="img/group6.png" alt="">                                    
-                                </div>
-                                <div class="preview2">
-                                    <div class="arrow_box_b">            
-                                    </div>
+                                    <img src="img/group6.png" alt="">
+                                    <img src="img/line2.svg"  alt="">
                                 </div>
                                 <div class="banks-text">
                                     <div>MID AMERICA BANK:</div>
@@ -189,11 +164,8 @@
                             </div>
                             <div class="banks-group">
                                 <div class="banks-image">
-                                    <img src="img/group7.png" alt="">                                    
-                                </div>
-                                <div class="preview2">
-                                    <div class="arrow_box_b">            
-                                    </div>
+                                    <img src="img/group7.png" alt="">
+                                    <img src="img/line2.svg"  alt="">
                                 </div>
                                 <div class="banks-text">
                                     <div>SIMMONS FIRST:</div>
@@ -204,10 +176,7 @@
                             <div class="banks-group">
                                 <div class="banks-image">
                                     <img src="img/group8.png" alt="">
-                                </div>
-                                <div class="preview2">
-                                    <div class="arrow_box_b">            
-                                    </div>
+                                    <img src="img/line2.svg"  alt="">
                                 </div>
                                 <div class="banks-text">
                                     <div>USAA:</div>
@@ -224,10 +193,7 @@
                     <div class="footer-wrapper"> 
                         
                             <div class="footer-content2">
-                                <div class="footer-logo-content">
-                                    <div class="footer-logo"></div>
-                                    <div class="border-footer-logo"></div> 
-                                    <div class="text-footer-logo">Find the best credit card offers online</div>                               
+                                <div class="header-logo">                                
                                 </div>
                                 <div class="footer-menu">
                                     <ul class="footer-list">

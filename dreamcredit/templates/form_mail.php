@@ -1,35 +1,20 @@
-<div class="content-form">
-  <form class="form form--invalid" action="form1.php" method="POST" id="form_question"> 
+    <form class="form form--invalid" action="form1.php" method="POST" id="form_question"> 
     <h2 class ="write_us-title">WRITE US</h2>
-    <ul class="form-input">    
+    <ul class="form-input">
       <li>
-        <?php $classname = isset($errors['subject']) ? "form_li_invalid" : "form_li-s" ;
-        $value = isset($form['subject']) ? $form['subject'] : ""; ?>  
+            <?php $classname = isset($errors['subject']) ? "form_li_invalid" : "form_li" ;
+            $value = isset($form['subject']) ? $form['subject'] : ""; ?>  
         <label class="form_label" for="subject">Subject<span class="red">*</span>:</label>
-        <div class="custom-select">  
-        <style>            
-            .color-gray {color: #B3B3B3;}
-        </style>
-          <select  class="<?=$classname;?> form_li-select color-gray" id="subject" name="subject" value="<?=$value;?>" onchange="this.setAttribute('data-selected', true)">
-                        <option id="option" disabled selected hidden >Select subject</option>
-                        <option value="1" <?php if (isset($form['subject']) && $form['subject']=="Building Credit History") echo "selected";?>>Building Credit History</option>
-                        <option value="Bad Credit" <?php if (isset($form['subject']) && $form['subject']=="Bad Credit") echo "selected";?>>Bad Credit</option>
-                        <option value="3" <?php if (isset($form['subject']) && $form['subject']=="Credit Cards for Business") echo "selected";?>>Credit Cards for Business</option>
-                        <option value="4" <?php if (isset($form['subject']) && $form['subject']=="General") echo "selected";?>>General</option>
-                        <option value="5" <?php if (isset($form['subject']) && $form['subject']=="Balance Transfer") echo "selected";?>>Balance Transfer</option>
-                        <option value="6" <?php if (isset($form['subject']) && $form['subject']=="Credit Card Rewards") echo "selected";?>>Credit Card Rewards</option>
-                        <option value="7" <?php if (isset($form['subject']) && $form['subject']=="Good Credit") echo "selected";?>>Good Credit</option>
-          </select>
-
-          <script>            
-              $('#subject').change(function(){
-                if (!$(this).val()) $(this).addClass('color-gray');
-                else $(this).removeClass('color-gray');
-                });
-                if ($('#subject').val()) $('#subject').removeClass('color-gray');
-          </script>        
-          <span class="arrow"><i class="arrow-down"></i></span>
-          </div>                    
+        <select class="<?=$classname;?> form_li-select" id="subject" name="subject" value="<?=$value;?>" required onchange="this.setAttribute('data-selected', true)">
+                    <option disabled selected hidden><span class="select-subject">Select Subject</span></option>
+                    <option>Building Credit History</option>
+                    <option>Bad Credit</option>
+                    <option>Credit Cards for Business</option>
+                    <option>General</option>
+                    <option>Balance Transfer</option>
+                    <option>Credit Card Rewards</option>
+                    <option>Good Credit</option>
+        </select>
       </li>
       <li>
             <?php $classname = isset($errors['email']) ? "form_li_invalid" : "form_li" ;
@@ -60,19 +45,14 @@
       </li>      
       <li>
         <div><span class="red">* required fields</span></div>
-        <input class="form_send popup" type="submit" name="send" value="SEND" id="myBtn" onclick="this.className = (this.className == 'color-gray' ? 'square-new' : 'color-gray')">
-        <script>
-          
-            
-        </script>
+        <input class="form_send popup" type="submit" name="send" value="SEND" id="myBtn" onclick="btn_onclick()">
       </li>
     </ul>
-  </form>  
-</div>   
+  </form>     
   <?php  
    if (isset($clean)) {
-    $to = "resume@ooo-modern.ru";
-    //$to = "nickolay.isaeff@gmail.com";
+    //$to = "resume@ooo-modern.ru";
+    $to = "nickolay.isaeff@gmail.com";
     $letter = $_POST['subject'];
     $charset = "utf-8";
     $headerss ="Content-type: text/html; charset=$charset\r\n";

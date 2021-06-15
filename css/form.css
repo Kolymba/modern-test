@@ -10,80 +10,133 @@
     overflow: auto; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
-  }
-  .modal {
-    display: block; 
-    position: fixed;
-    z-index: 1; 
-    padding-top: 26em;
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
-  }   
-  .modal-content {
-    background-color: #FFF3C4;
-    margin: auto;
-    border: 1px solid #888;
-    max-width: 510px; 
-    height: 142px;
-    
-    text-align: center;
-  }
-  .modal-content b{
-    display: block;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 25px;
-    letter-spacing: 0em;
-    padding: 38px 0 20px 0;
-  }
-  .modal-content p{
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-  } 
-  .close {
-    background-image:  url(/img/close.png);
-    float: right;
-    height: 27px;
-    width: 27px;    
-  }  
-  .close:hover,
-  .close:focus {
-    color: #009EE8;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
+}
+.modal {
+  display: block; 
+  position: fixed;
+  z-index: 1; 
+  padding-top: 26em;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}   
+.modal-content {
+  background-color: #FFF3C4;
+  margin: auto;
+  border: 1px solid #888;
+  max-width: 510px; 
+  height: 142px;
+  
+  text-align: center;
+}
+.modal-content b{
+  display: block;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  padding: 38px 0 20px 0;
+}
+.modal-content p{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+} 
+.close {
+  background-image:  url(/img/close.png);
+  float: right;
+  height: 27px;
+  width: 27px;    
+}  
+.close:hover,
+.close:focus {
+  color: #009EE8;
+  text-decoration: none;
+  cursor: pointer;
+}
 .form_li-select{      
-    background: #ffffff url("/img/select.png") 97% no-repeat;
-    -webkit-appearance: none;
-    background-position-x: right;
-    
-  }    
+ /* background: #ffffff url("/img/select.png") 97% no-repeat;*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-position-x: right; 
+  appearance: none;
+  z-index: 1;
+  padding-left: 10px;    
+}
 .form_li_invalid {
-        width: 546px;
-        height: 32px;        
-        box-sizing: border-box;
-        background: #ffffff url("/img/error.svg") 97% 7px no-repeat;
-        border: 1px solid #f84646;
-        padding-left: 10px;
-        color: #f84646;
+  width: 546px;
+  height: 32px;        
+  box-sizing: border-box;        
+  border: 1px solid #f84646;
+  padding-left: 10px;
+  color: #f84646;
+  outline: none;
 }
 .form_li_invalid-text{
   width: 546px;
-  height: 140px;
-  background: #ffffff url("/img/error.svg") 97% 7px no-repeat;
+  height: 140px;  
   border: 1px solid #f84646;
   box-sizing: border-box;
+  outline: none;
 } 
 .red{
   color: #f84646;
 }
+.form_li-select option {
+  color: #4D4D4D;
+}
+#default_message_overlay {
+  position: absolute;
+  display: block;
+  color: #B3B3B3;
+  padding: 5px 10px; 
+}
+.d_invalid{  
+  color: #f84646 !important;  
+}
+.custom-select{
+  position: relative;
+  width: 546px;
+}
+.arrow{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #009EE8;
+  cursor: pointer;
+  pointer-events: none;
+}
+i {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+    margin: 9px 0px 0px 11px;
+    cursor: pointer;
+    pointer-events: none;
+}
+.arrow-down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  cursor: pointer;
+}
+.form_li-s{
+  padding-left: 10px;
+    width: 100%;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #B3B3B3;
+    box-sizing: border-box;
+    outline: none;
+}
+ /* .color-gray {color: #B3B3B3 !important;} background: #ffffff url("/img/select.png") 97% no-repeat;*/

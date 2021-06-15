@@ -1,0 +1,136 @@
+&:invalid {
+    color: gray;
+  }
+  
+  // Styling for browsers which do support
+  // styling select option elements directly
+  [disabled] {
+    color: gray;
+  }
+  
+  option {
+    color: $default-color;
+  }
+
+  $('#subject').find('option').css("height", "30px");
+
+  <script>
+document.getElementById("option").style.color = "blue";
+function a(){
+                if(document.getElementById('subject').value!="Select Subject"){
+                    document.getElementById('option').style.color="red";
+                }
+            }
+</script> 
+
+.form_li-select option{
+  color: #4D4D4D;
+  padding-top: 8px;
+}
+.form_li-select option:first-child {
+  color: #B3B3B3;
+}
+select option:disabled {
+  color: #000;
+}
+
+onfocus='this.size=1;' 
+            onblur='this.size=1;' 
+            onchange='this.size=16; this.blur();'
+            .form_li-select:invalid {
+  color: #B3B3B3;
+}
+.form_li-select[disabled] {
+  color: #B3B3B3;
+}
+select:required:invalid {
+  color: #B3B3B3;
+}
+select, option {
+  color: #4D4D4D;
+} 
+.form_li-select:first-child{
+  color: #888 !important;
+}
+option[selected] {
+  background-color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.arrow{
+  display: block;
+  position: absolute;
+  background: #009EE8;
+  height: 100%;
+  width: 32px;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+.arrow::before, .custom-arrow::after {	  
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.arrow::before {
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+  border-top: 1em solid red;
+  position: absolute;
+
+}
+
+$("#myBtn").click(function(){
+              var $this = $(this);
+              if($this.data('clicked')) {
+                $("#subject").removeClass("color-gray");
+              }
+              else {
+                  $this.data('clicked', true);
+                  $("#subject").removeClass("color-gray");
+              }        
+          });
+
+          
+
+             $('#myBtn').on('click', function() {
+              if (!$(this).data('clicked')) {
+                  //do your stuff here if the button is not clicked
+                 
+                  $(this).data('clicked', true);
+              } else {                  
+                  //do your stuff here if the button is clicked
+                  $("#subject").removeClass("color-gray");
+                  $(this).data('clicked', false);
+              }
+          });   
+
+
+
+
+          var elementClicked;
+            $("#myBtn").click(function(){
+              elementClicked = false;
+            });
+            if( elementClicked = true ) {
+              
+            }
+            $('#myBtn').click(function(){
+              $("#subject").addClass("d_invalid");
+            });      
+
+
+
+            $("#myBtn").click(function(){
+              var $this = $(this);
+              if($this.data('clicked')) {
+                $("#subject").addClass("d_invalid");
+              }
+              else {
+                  $this.data('clicked', true);
+                  
+              }        
+            });
